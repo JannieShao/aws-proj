@@ -1,0 +1,896 @@
+.load{
+    position: relative;
+    width:100%;
+    height: 100px;
+}
+/*第1种效果*/
+.loading_1{
+            width: 80px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top:100px;
+        }
+.loading_1 span{
+    display: inline-block;
+    width: 8px;
+    height: 100%;
+    border-radius: 4px;
+    background: lightgreen;
+    -webkit-animation: load_1 1s ease infinite;
+}
+@-webkit-keyframes load_1{
+    0%,100%{
+        height: 40px;
+        background: lightgreen;
+    }
+    50%{
+        height: 70px;
+        margin: -15px 0;
+        background: lightblue;
+    }
+}
+.loading_1 span:nth-child(2){
+    -webkit-animation-delay:0.2s;
+}
+.loading_1 span:nth-child(3){
+    -webkit-animation-delay:0.4s;
+}
+.loading_1 span:nth-child(4){
+    -webkit-animation-delay:0.6s;
+}
+.loading_1 span:nth-child(5){
+    -webkit-animation-delay:0.8s;
+}
+/*第2种效果*/
+.loading_2{
+    width: 150px;
+    height: 4px;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top:100px;
+    position: relative;
+    background: lightgreen;
+    -webkit-animation: l2_changeBgColor 1.04s ease-in infinite alternate;
+}
+.loading_2 span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: lightgreen;
+    position: absolute;
+    margin-top: -7px;
+    margin-left:-8px;
+    -webkit-animation: l2_changePosition 1.04s ease-in infinite alternate;
+}
+@-webkit-keyframes l2_changeBgColor{
+    0%{
+        background: lightgreen;
+    }
+    100%{
+        background: lightblue;
+    }
+}
+@-webkit-keyframes l2_changePosition{
+    0%{
+        background: lightgreen;
+    }
+    100%{
+        margin-left: 142px;
+        background: lightblue;
+    }
+}
+/*第3种效果*/
+.loading_3{
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top:100px;
+}
+.loading_3 span{
+    display: inline-block;
+    width: 15px;
+    height: 100%;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: lightgreen;
+    -webkit-animation: load_3 1.04s ease infinite;
+}
+.loading_3 span:last-child{
+    margin-right: 0px; 
+}
+@-webkit-keyframes load_3{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.loading_3 span:nth-child(1){
+    -webkit-animation-delay:0.13s;
+}
+.loading_3 span:nth-child(2){
+    -webkit-animation-delay:0.26s;
+}
+.loading_3 span:nth-child(3){
+    -webkit-animation-delay:0.39s;
+}
+.loading_3 span:nth-child(4){
+    -webkit-animation-delay:0.52s;
+}
+.loading_3 span:nth-child(5){
+    -webkit-animation-delay:0.65s;
+}
+/*第4种效果*/
+.loading_4{
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top:100px;
+}
+.loading_4 span{
+    display: inline-block;
+    width: 15px;
+    height: 100%;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: lightgreen;
+    -webkit-animation: load_4 1.04s ease infinite;
+}
+.loading_4 span:last-child{
+    margin-right: 0px; 
+}
+@-webkit-keyframes load_4{
+    0%{
+        opacity: 1;
+        -webkit-transform: scale(1.3);
+    }
+    100%{
+        opacity: 0.2;
+        -webkit-transform: scale(.3);
+    }
+}
+.loading_4 span:nth-child(1){
+    -webkit-animation-delay:0.13s;
+}
+.loading_4 span:nth-child(2){
+    -webkit-animation-delay:0.26s;
+}
+.loading_4 span:nth-child(3){
+    -webkit-animation-delay:0.39s;
+}
+.loading_4 span:nth-child(4){
+    -webkit-animation-delay:0.52s;
+}
+.loading_4 span:nth-child(5){
+    -webkit-animation-delay:0.65s;
+}
+/*第5种效果*/
+.loading_5{
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    position: relative;
+    margin-top:100px;
+}
+.loading_5 span{
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    border-radius: 50%;
+    background: lightgreen;
+    -webkit-animation: load_5 1.04s ease-in infinite alternate;
+}
+@-webkit-keyframes load_5{
+    0%{
+        opacity: 1;
+        -webkit-transform: translate(0px);
+    }
+    100%{
+        opacity: 0.2;
+        -webkit-transform: translate(150px);
+    }
+}
+.loading_5 span:nth-child(1){
+    -webkit-animation-delay:0.13s;
+}
+.loading_5 span:nth-child(2){
+    -webkit-animation-delay:0.26s;
+}
+.loading_5 span:nth-child(3){
+    -webkit-animation-delay:0.39s;
+}
+.loading_5 span:nth-child(4){
+    -webkit-animation-delay:0.52s;
+}
+.loading_5 span:nth-child(5){
+    -webkit-animation-delay:0.65s;
+}
+/*第6种效果*/
+.loading_6{
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top:100px;
+    text-align: center;
+}
+.loading_6 span{
+    display: inline-block;
+    width: 15px;
+    height: 100%;
+    margin-right: 5px;
+    background: lightgreen;
+    -webkit-animation: load_6 1.04s ease infinite;
+}
+.loading_6 span:last-child{
+    margin-right: 0px; 
+}
+@-webkit-keyframes load_6{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.loading_6 span:nth-child(1){
+    -webkit-animation-delay:0.13s;
+}
+.loading_6 span:nth-child(2){
+    -webkit-animation-delay:0.26s;
+}
+.loading_6 span:nth-child(3){
+    -webkit-animation-delay:0.39s;
+}
+.loading_6 span:nth-child(4){
+    -webkit-animation-delay:0.52s;
+}
+.loading_6 span:nth-child(5){
+    -webkit-animation-delay:0.65s;
+}
+/*第7种效果*/
+.loading_7{
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top:100px;
+}
+.loading_7 span{
+    display: inline-block;
+    width: 15px;
+    height: 100%;
+    margin-right: 5px;
+    background: lightgreen;
+    -webkit-transform-origin: right bottom;
+    -webkit-animation: load_7 1s ease infinite;
+}
+.loading_7 span:last-child{
+    margin-right: 0px; 
+}
+@-webkit-keyframes load_7{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: rotate(90deg);
+    }
+}
+.loading_7 span:nth-child(1){
+    -webkit-animation-delay:0.13s;
+}
+.loading_7 span:nth-child(2){
+    -webkit-animation-delay:0.26s;
+}
+.loading_7 span:nth-child(3){
+    -webkit-animation-delay:0.39s;
+}
+.loading_7 span:nth-child(4){
+    -webkit-animation-delay:0.52s;
+}
+.loading_7 span:nth-child(5){
+    -webkit-animation-delay:0.65s;
+}
+/*第8种效果*/
+.loading_8{
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top:100px;
+}
+.loading_8 span{
+    display: inline-block;
+    width: 15px;
+    height: 100%;
+    margin-right: 5px;
+    background: lightgreen;
+    -webkit-transform-origin: right bottom;
+    -webkit-animation: load_8 1s ease infinite;
+}
+.loading_8 span:last-child{
+    margin-right: 0px; 
+}
+@-webkit-keyframes load_8{
+    0%{
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: rotate(90deg) scale(.3);
+    }
+}
+.loading_8 span:nth-child(1){
+    -webkit-animation-delay:0.13s;
+}
+.loading_8 span:nth-child(2){
+    -webkit-animation-delay:0.26s;
+}
+.loading_8 span:nth-child(3){
+    -webkit-animation-delay:0.39s;
+}
+.loading_8 span:nth-child(4){
+    -webkit-animation-delay:0.52s;
+}
+.loading_8 span:nth-child(5){
+    -webkit-animation-delay:0.65s;
+}
+/*第9种效果*/
+.loading_9{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    margin-top:100px;
+}
+.loading_9 span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: lightgreen;
+    position: absolute;
+    -webkit-animation: load_9 1.04s ease infinite;
+}
+@-webkit-keyframes load_9{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+.loading_9 span:nth-child(1){
+    left: 0;
+    top: 50%;
+    margin-top:-8px;
+    -webkit-animation-delay:0.13s;
+}
+.loading_9 span:nth-child(2){
+    left: 14px;
+    top: 14px;
+    -webkit-animation-delay:0.26s;
+}
+.loading_9 span:nth-child(3){
+    left: 50%;
+    top: 0;
+    margin-left: -8px;
+    -webkit-animation-delay:0.39s;
+}
+.loading_9 span:nth-child(4){
+    top: 14px;
+    right:14px;
+    -webkit-animation-delay:0.52s;
+}
+.loading_9 span:nth-child(5){
+    right: 0;
+    top: 50%;
+    margin-top:-8px;
+    -webkit-animation-delay:0.65s;
+}
+.loading_9 span:nth-child(6){
+    right: 14px;
+    bottom:14px;
+    -webkit-animation-delay:0.78s;
+}
+.loading_9 span:nth-child(7){
+    bottom: 0;
+    left: 50%;
+    margin-left: -8px;
+    -webkit-animation-delay:0.91s;
+}
+.loading_9 span:nth-child(8){
+    bottom: 14px;
+    left: 14px;
+    -webkit-animation-delay:1.04s;
+}
+/*第10种效果*/
+.loading_10{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    margin-top:100px;
+}
+.loading_10 span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: lightgreen;
+    position: absolute;
+    -webkit-animation: load_10 1.04s ease infinite;
+}
+@-webkit-keyframes load_10{
+    0%{
+        -webkit-transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: scale(.3);
+        opacity: 0.5;
+    }
+}
+.loading_10 span:nth-child(1){
+    left: 0;
+    top: 50%;
+    margin-top:-10px;
+    -webkit-animation-delay:0.13s;
+}
+.loading_10 span:nth-child(2){
+    left: 14px;
+    top: 14px;
+    -webkit-animation-delay:0.26s;
+}
+.loading_10 span:nth-child(3){
+    left: 50%;
+    top: 0;
+    margin-left: -10px;
+    -webkit-animation-delay:0.39s;
+}
+.loading_10 span:nth-child(4){
+    top: 14px;
+    right:14px;
+    -webkit-animation-delay:0.52s;
+}
+.loading_10 span:nth-child(5){
+    right: 0;
+    top: 50%;
+    margin-top:-10px;
+    -webkit-animation-delay:0.65s;
+}
+.loading_10 span:nth-child(6){
+    right: 14px;
+    bottom:14px;
+    -webkit-animation-delay:0.78s;
+}
+.loading_10 span:nth-child(7){
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    -webkit-animation-delay:0.91s;
+}
+.loading_10 span:nth-child(8){
+    bottom: 14px;
+    left: 14px;
+    -webkit-animation-delay:1.04s;
+}
+/*第11种效果*/
+.loading_11{
+    width: 80px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top:100px;
+}
+.loading_11 span{
+    display: inline-block;
+    width: 8px;
+    height: 100%;
+    border-radius: 4px;
+    background: lightgreen;
+    -webkit-animation: load_11 1.04s ease infinite;
+}
+@-webkit-keyframes load_11{
+    0%,100%{
+        height: 40px;
+        background: lightgreen;
+    }
+    50%{
+        height: 60px;
+        margin-top: -20px;
+        background: lightblue;
+    }
+}
+.loading_11 span:nth-child(2){
+    -webkit-animation-delay:0.13s;
+}
+.loading_11 span:nth-child(3){
+    -webkit-animation-delay:0.26s;
+}
+.loading_11 span:nth-child(4){
+    -webkit-animation-delay:0.39s;
+}
+.loading_11 span:nth-child(5){
+    -webkit-animation-delay:0.52s;
+}
+/*第12种效果*/
+.loading_12{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top:100px;
+    position: relative;
+    border:5px solid lightgreen;
+    -webkit-animation: l12_turn 2s linear infinite;
+}
+.loading_12 span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: lightgreen;
+    position: absolute;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    -webkit-animation: l12_changeBgColor 2s linear infinite;
+}
+@-webkit-keyframes l12_changeBgColor{
+    0%{
+        background: lightgreen;
+    }
+    100%{
+        background: lightblue;
+    }
+}
+@-webkit-keyframes l12_turn{
+    0%{
+        -webkit-transform: rotate(0deg);
+        border-color: lightgreen;
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        border-color: lightblue;
+    }
+}
+/*第13种效果*/
+.loading_13{
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top:100px;
+    text-align: center;
+}
+.loading_13 span{
+    display: inline-block;
+    width: 15px;
+    height: 100%;
+    margin-right: 5px;
+    background: lightgreen;
+    -webkit-animation: load_13 1.04s ease infinite;
+}
+.loading_13 span:last-child{
+    margin-right: 0px; 
+}
+@-webkit-keyframes load_13{
+    0%{
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+    }
+    100%{
+        opacity: .2;
+        -webkit-transform: scale(.2);
+    }
+}
+.loading_13 span:nth-child(1){
+    -webkit-animation-delay:0.13s;
+}
+.loading_13 span:nth-child(2){
+    -webkit-animation-delay:0.26s;
+}
+.loading_13 span:nth-child(3){
+    -webkit-animation-delay:0.39s;
+}
+.loading_13 span:nth-child(4){
+    -webkit-animation-delay:0.52s;
+}
+.loading_13 span:nth-child(5){
+    -webkit-animation-delay:0.65s;
+}
+/*第14种效果*/
+.loading_14{
+    width: 150px;
+    height: 8px;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top:100px;
+    position: relative;
+    background: lightblue;
+    overflow: hidden;
+}
+.loading_14 span{
+    display:block;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: lightgreen;
+    -webkit-animation: l14_changePosition 4s linear infinite;
+}
+@-webkit-keyframes l14_changePosition{
+    0%{
+        -webkit-transform: translate(-150px);
+    }
+    50%{
+        -webkit-transform: translate(0);
+    }
+    100%{
+        -webkit-transform: translate(150px);
+    }
+}
+/*第15种效果*/
+.loading_15{
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+.loading_15 span{
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    background: lightgreen;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    overflow: hidden;
+    -webkit-animation: l15_changePosition 2.08s linear infinite;
+}
+@-webkit-keyframes l15_changePosition{
+    0%,100%{
+        -webkit-transform: translate(70px);
+    }
+    20%{
+        width: 50px;
+        height: 30px;
+        margin-top:-15px;
+        -webkit-transform: translate(0px);
+    }
+    30%{
+        width: 20px;
+        height: 60px;
+        margin-top:-30px;
+        -webkit-transform: translate(0px);
+    }
+    35%{
+        width: 50px;
+        height: 30px;
+        margin-top:-15px;
+        -webkit-transform: translate(5px);
+        background: lightblue;
+    }
+    70%{
+        width: 50px;
+        height: 30px;
+        margin-top:-15px;
+        -webkit-transform: translate(160px);
+    }
+    80%{
+        width: 20px;
+        height: 60px;
+        margin-top:-30px;
+        -webkit-transform: translate(160px);
+    }
+    85%{
+        width: 50px;
+        height: 30px;
+        margin-top:-15px;
+        -webkit-transform: translate(155px);
+        background: lightgreen;
+    }
+}
+/*第16种效果*/
+.loading_16{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    margin-top:100px;
+}
+.loading_16 span{
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: lightgreen;
+    position: absolute;
+    -webkit-animation: load_16 1.04s ease infinite;
+}
+@-webkit-keyframes load_16{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+.loading_16 span:nth-child(1){
+    left: 0;
+    top: 50%;
+    margin-top:-5px;
+    -webkit-animation-delay:0.13s;
+}
+.loading_16 span:nth-child(2){
+    left: 10px;
+    top: 20px;
+    -webkit-transform: rotate(45deg);
+    -webkit-animation-delay:0.26s;
+}
+.loading_16 span:nth-child(3){
+    left: 50%;
+    top: 10px;
+    margin-left: -15px;
+    -webkit-transform: rotate(90deg);
+    -webkit-animation-delay:0.39s;
+}
+.loading_16 span:nth-child(4){
+    top: 20px;
+    right:10px;
+    -webkit-transform: rotate(135deg);
+    -webkit-animation-delay:0.52s;
+}
+.loading_16 span:nth-child(5){
+    right: 0;
+    top: 50%;
+    margin-top:-5px;
+    -webkit-transform: rotate(180deg);
+    -webkit-animation-delay:0.65s;
+}
+.loading_16 span:nth-child(6){
+    right: 10px;
+    bottom:20px;
+    -webkit-transform: rotate(225deg);
+    -webkit-animation-delay:0.78s;
+}
+.loading_16 span:nth-child(7){
+    bottom: 10px;
+    left: 50%;
+    margin-left: -15px;
+    -webkit-transform: rotate(270deg);
+    -webkit-animation-delay:0.91s;
+}
+.loading_16 span:nth-child(8){
+    bottom: 20px;
+    left: 10px;
+    -webkit-transform: rotate(315deg);
+    -webkit-animation-delay:1.04s;
+}
+/*第17种效果*/
+.loading_17 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top:100px;
+    position: relative;
+}
+.loading_17 div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-animation: load_17 2.08s linear infinite;
+}
+.loading_17 div span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: lightgreen;
+    position: absolute;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+@-webkit-keyframes load_17{
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    10%{
+        -webkit-transform: rotate(45deg);
+    }
+    50%{
+        opacity: 1;
+        -webkit-transform: rotate(160deg);
+    }
+    62%{
+        opacity: 0;
+    }
+    65%{
+        opacity: 0;
+        -webkit-transform: rotate(200deg);
+    }
+    90%{
+        -webkit-transform: rotate(340deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+
+}
+.loading_17 div:nth-child(1){
+    -webkit-animation-delay:0.2s;
+}
+.loading_17 div:nth-child(2){
+    -webkit-animation-delay:0.4s;
+}
+.loading_17 div:nth-child(3){
+    -webkit-animation-delay:0.6s;
+}
+.loading_17 div:nth-child(4){
+    -webkit-animation-delay:0.8s;
+}
+/*第18种效果*/
+.loading_18{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top:100px;
+    position: relative;
+    -webkit-animation: load_18 3s linear infinite;
+}
+.loading_18 div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.loading_18 span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #99CC66;
+    position: absolute;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    -webkit-animation: l18_changeBgColor 3s ease infinite;
+}
+@-webkit-keyframes load_18{
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    33.3%{
+        -webkit-transform: rotate(120deg);
+    }
+    66.6%{
+        -webkit-transform: rotate(240deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes l18_changeBgColor{
+    0%,100%{
+        background: #99CC66;
+    }
+    33.3%{
+        background: #FFFF66;
+    }
+    66.6%{
+        background: #FF6666;
+    }
+}
+.loading_18 div:nth-child(2){
+    -webkit-transform: rotate(120deg);
+}
+.loading_18 div:nth-child(3){
+    -webkit-transform: rotate(240deg);
+}
+.loading_18 div:nth-child(2) span{
+    -webkit-animation-delay: 1s;
+}
+.loading_18 div:nth-child(3) span{
+    -webkit-animation-delay: 2s;
+}
